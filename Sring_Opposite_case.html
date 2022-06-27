@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opposite Case Sting</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a,b,c;
+	a = "I Am YuVrAj ThAkUr FrOm DeWaS";
+	c = "";
+	for(i=0;i<a.length;i++)
+	{
+		if(a.charAt(i)==a.charAt(i).toLowerCase())
+		{
+			c=c+a.charAt(i).toUpperCase();
+		}
+		else if (a.charAt(i)==a.charAt(i).toUpperCase())
+		{
+			c=c+a.charAt(i).toLowerCase();
+		}
+		else
+		{
+			c=c+a.charAt(i);
+		}
+
+	}
+	document.write(c+"<br>");
+	
+</script>
+</body>
+</html>
